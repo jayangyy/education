@@ -21,24 +21,23 @@ import org.springframework.stereotype.Component;
 public class PostService {
     @Resource
     private PostDao dao;
-    //private static Log log =LogService.getLog(PostService.class);  
+    private static Log log =LogService.getLog(PostService.class);  
      private static Log log1 = LogFactory.getLog(LogService.class);
     public void getPost() throws SQLException {
 //        return new DataModel().withData(dao.getPost());
     }
     public Object TestAspectj() throws Throwable
     {
-        Log log =LogService.getLog(PostService.class); 
-        log.error("我是错误提示");
-        log.debug("我是调试日志");
-        log.warn("我是警告级别日志");
-        log.info("我是信息级别日志");
+        log.error("我是错误提示1");
+        log.debug("我是调试日志1");
+        log.warn("我是警告级别日志1");
+        log.info("我是信息级别日志1");
         log.trace("我是堆栈日志");
-        log1.error("我是错误提示");
-        log1.debug("我是调试日志");
-        log1.warn("我是警告级别日志");
-        log1.info("我是信息级别日志");
-        log1.trace("我是堆栈日志");
+//        log1.error("我是错误提示");
+//        log1.debug("我是调试日志");
+//        log1.warn("我是警告级别日志");
+//        log1.info("我是信息级别日志");
+//        log1.trace("我是堆栈日志");
          System.out.println(log.getClass());
                 System.out.println(log1.getClass());
        /// int i=9/0;
